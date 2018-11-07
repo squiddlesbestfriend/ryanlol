@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SQUIDDLES</title>
+  <link rel="stylesheet" type="text/css" href="squid.css">
+
+  </head>
+<body bgcolor="#dff53e">
+  <h1 class="heading">TAP THE SQUIDDLES</h1>
+  <h2 class="heading2">NUMBER OF TAPS</h2>
+  <img class="arrow" src="file:///E:/Squiddles%20Brain/Assets/Layer%201.png">
+
+
+
+<input type="image" onclick="myFunction()" src="E:\Squiddles Brain\Assets\squid-gif.gif" id="squid"/>
+
+<p id="count">0</p>
+
+<script>
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myFunction(){
+    document.getElementById("count").innerHTML = add();
+}
+</script>
+  </body>
+</html>
